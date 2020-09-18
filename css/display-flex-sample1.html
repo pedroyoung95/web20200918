@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        /*맨 위 메뉴바 관련 스타일*/
+        .my-menu {
+            display: flex;
+            background-color: green;
+            height: 80px;
+            align-items: center;
+        }
+        .menu-item {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 25px 10px;
+        }
+        .menu-item:hover {
+            color: black;
+            background-color: #fff;
+        }
+        #dummy {
+            flex: 1;
+        }
+        .sub-menu {
+            position: absolute;
+            display: none;   
+            top: 80px;       
+            left: 0px;
+            padding: 10px;  
+            background-color: #fff;
+            border-top: 5px solid green;
+        }
+        .menu-item {
+            position: relative;
+        }
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
+        
+        /*메뉴바 밑 컨텐츠 관련 스타일*/
+        .main-container {
+            margin-top: 30px;
+            display: flex;            
+        }
+        .main-container>div {
+            border: 5px solid black;           
+        }
+        .side-menu {
+            width: 200px;
+        }
+        .main-content {
+            flex: 1;
+        }
+        .ad-container {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-menu">
+        <div class="menu-item">
+            TUTORIALS<i class="fas fa-caret-down">
+                <div class="sub-menu">
+                    <div class="sub-item">Lorem.</div>
+                    <div class="sub-item">Voluptates!</div>
+                    <div class="sub-item">Magni.</div>
+                    <div class="sub-item">Sequi?</div>
+                    <div class="sub-item">Perferendis?</div>
+                </div>                
+            </i>
+        </div>
+        <div class="menu-item">
+            REFERENCES<i class="fas fa-caret-down">
+                <div class="sub-menu">
+                    <div class="sub-item">Lorem.</div>
+                    <div class="sub-item">Consequatur.</div>
+                    <div class="sub-item">Dignissimos.</div>
+                    <div class="sub-item">Temporibus.</div>
+                    <div class="sub-item">Tenetur?</div>
+                </div>
+            </i></div>
+        <div class="menu-item">
+            EXAMPLES<i class="fas fa-caret-down">
+                <div class="sub-menu">
+                    <div class="sub-item">Lorem.</div>
+                    <div class="sub-item">Eligendi.</div>
+                    <div class="sub-item">Dignissimos!</div>
+                    <div class="sub-item">Eveniet?</div>
+                    <div class="sub-item">Vel!</div>
+                </div>
+            </i></div>
+        <div class="menu-item">
+            EXERCISE<i class="fas fa-caret-down">
+                <div class="sub-menu">
+                    <div class="sub-item">Lorem.</div>
+                    <div class="sub-item">Nam.</div>
+                    <div class="sub-item">Deserunt.</div>
+                    <div class="sub-item">Enim.</div>
+                    <div class="sub-item">Odio.</div>
+                </div>
+            </i>
+        </div>
+        <div id="dummy"></div>
+        <div class="menu-item"><i class="fas fa-adjust"></i></div>
+        <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+        <div class="menu-item"><i class="fas fa-search"></i></div>
+    </div>
+
+    <div class="main-container">
+        <div class="side-menu">
+            <div>Lorem.</div>
+            <div>Deserunt!</div>
+            <div>Quas!</div>
+            <div>Possimus.</div>
+            <div>Commodi.</div>
+            <div>Eos.</div>
+            <div>Dolore.</div>
+            <div>Officia!</div>
+            <div>Voluptatum!</div>
+            <div>Eius?</div>
+            <div>Voluptas.</div>
+            <div>Perferendis.</div>
+            <div>Soluta?</div>
+            <div>Officia.</div>
+            <div>Eveniet?</div>
+            <div>Dolorem!</div>
+            <div>Ea.</div>
+            <div>Officia!</div>
+            <div>Minima.</div>
+            <div>Explicabo.</div>
+            <div>Quibusdam!</div>
+            <div>Officia!</div>
+            <div>Inventore!</div>
+            <div>Non.</div>
+            <div>Eius!</div>
+            <div>Eos?</div>
+            <div>Architecto!</div>
+            <div>Ipsum!</div>
+            <div>Odio.</div>
+            <div>Labore.</div>
+        </div>
+        <div class="main-content">
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab corrupti provident mollitia exercitationem. Ullam eum, dolorum fugiat magnam quia esse porro praesentium veritatis aliquid repellat assumenda nemo, excepturi nobis quam.</p>
+            <h1>Explicabo, maxime nesciunt.</h1>
+            <p>Laboriosam tempore eveniet saepe, quos architecto laudantium doloribus blanditiis culpa ipsa nam. Corrupti aspernatur, ipsam ducimus corporis rerum voluptas voluptates at illum asperiores, eius quia sequi minus esse animi repellendus?</p>
+            <h1>At, soluta maiores?</h1>
+            <p>Similique totam vel dicta veniam aspernatur placeat aut, exercitationem id ad nisi nemo facilis consequuntur, adipisci quo esse quos quis eveniet quaerat porro voluptate. Ducimus deleniti asperiores dicta ut perferendis?</p>
+            <h1>Explicabo, vitae fuga?</h1>
+            <p>Blanditiis quibusdam officiis ab rem voluptatum consequatur nam obcaecati fugit libero magnam expedita aliquam, neque accusamus incidunt ex sint hic eaque, rerum, tenetur debitis voluptas ad. Nostrum eaque repellat laboriosam.</p>
+            <h1>Aliquam, sunt placeat?</h1>
+            <p>Inventore, totam quaerat doloremque, impedit cumque voluptatum tempore minus sapiente pariatur laborum soluta facere nostrum autem eligendi minima recusandae alias molestias. Aspernatur, quidem iusto. Libero quae id asperiores dolorem dicta?</p>
+            <h1>Facilis, in voluptatem.</h1>
+            <p>Facilis in natus reiciendis dolorem qui cupiditate laudantium? Similique, voluptas iste! Similique, inventore. Libero quos omnis quisquam dolorem? Maxime, aspernatur vero dolorum alias qui corrupti. Sed nam odit at quo?</p>
+            <h1>Dicta, quam harum.</h1>
+            <p>Eum id libero officia corrupti similique iure? Magni esse harum ut dolorum officia maiores! Ducimus ea mollitia porro et perferendis eius quos amet, dolor repellat minima vero debitis fuga repudiandae.</p>
+            <h1>Harum, hic inventore.</h1>
+            <p>Quibusdam illo dolorum cum commodi ipsam natus dolores sed ea asperiores possimus ab, assumenda dolore eaque. Quis eveniet debitis at autem animi. Fugiat sunt natus architecto ut eaque accusantium voluptas!</p>
+            <h1>Perspiciatis, quae sed.</h1>
+            <p>Optio tenetur suscipit nesciunt animi. Animi maxime amet quod aliquid veritatis veniam vero nisi, voluptas ea illum odit consectetur optio minus ipsa dolorem dolore. Blanditiis possimus placeat totam. Earum, hic.</p>
+            <h1>Consequatur, rerum amet.</h1>
+            <p>Modi minima delectus fuga officiis. Voluptatem iusto voluptatibus porro. Optio aperiam autem consectetur neque pariatur beatae cum mollitia, asperiores natus consequuntur repudiandae inventore voluptatibus quia aut ullam? Molestiae, eius eos.</p>
+        </div>
+        <div class="ad-container"></div>
+    </div>
+</body>
+</html>
