@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+        .div1 {text-align: center;}
+    </style>
+</head>
+<body>
+    <h1 
+    style="border: 5px solid yellow; width: 450px; margin: auto;">
+    I can do this with JavaScript!</h1>
+
+    <br>
+
+    <div class="div1">
+    <button
+     onclick="document.getElementById('lion1').src='lion2.gif'">
+        Magic Show!
+    </button>
+
+    <img id="lion1" src="lion1.gif"  style="width: 250px;">
+
+    <button
+     onclick="document.getElementById('lion1').src='lion1.gif'">
+        Picnic Time!
+    </button>
+    </div>
+
+    <br>
+
+    <h1 id="hello">Hello!</h1>
+
+    <button
+    onclick="document.getElementById('hello').style.fontSize='50px'">
+    Size Up!</button>
+
+    <br>
+
+    <p id="say" style="display: none;">I'm Lion!</p>
+
+    <button
+    onclick="document.getElementById('say').style.display='block'">
+    Click Me!</button>
+
+    <br>
+
+    <button id="test"></button>
+    <script>
+        document.getElementById('test').innerHTML="demo";
+        alert('test');
+        console.log('test console');
+    </script>
+   
+</body>
+</html>
