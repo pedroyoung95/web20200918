@@ -3,21 +3,96 @@
 <head>
     <script src='https://kit.fontawesome.com/a076d05399.js'>
     </script>
-    <style>              
+    <style> 
+    .div    {display: flex;}      
+    form {
+        border: 5px solid black;
+        padding: 10px;
+        margin-top: 10px;
+    }       
+    .ad-banner {
+        width: 600px;
+        height: 100px;
+        background-color: yellow;
+        color: black;
+        text-align: center;
+        margin: auto;
+    }
     </style>
 </head>
 <body>
-    <form>
-        <label for="이름">이름</label>
-        <input type="text" name="이름"><br>
-
-        <label for="성">성</label>
-        <input type="text" name="성"><br>
-        <hr>
-        <label for="성별" style="display: flex;">성별</label>        
+    <div class="ad-banner">ad-banner</div>
+    
+    <form method="post">
+        <h1 style="color: white; text-align: center; background-color: green;">
+            설문조사
+        </h1>
+        <div class="div" >
+            <label for="이름">이름
+                <input type="text" id="이름" name="이름" placeholder="길동" required></label><br>       
+            <label for="성">성
+                <input type="text" id="성" name="성" placeholder="홍" required></label>&nbsp;
+            <label>예시
+                <input type="text" value="홍길동" disabled>
+                </label>&nbsp;
+            <input type="button" value="이름">
+        </div>
+        
+        <br>
+        
+        <label>연령
+            <input type="number" min="19" max="39"></label>
+        <br><br>
+        <label>거주지
+            <select name="거주지" id="거주지" size="1">
+                <option value="서울">서울</option>
+                <option value="경기">경기</option>
+                <option value="인천">인천</option>
+                <option value="강원">강원</option>
+                <option value="충북">충북</option>
+                <option value="전북">전북</option>
+                <option value="경북">경북</option>
+                <option value="대구">대구</option>
+                <option value="전남">전남</option>
+                <option value="광주">광주</option>
+                <option value="경남">경남</option>
+                <option value="부산">부산</option>
+                <option value="제주">제주</option>
+            </select>
+        </label>
+        <br><br>
+        
+        <label>성별</label>        
         남<input type="radio" name="성별" value="남">
-        여<input type="radio" name="성별" value="여"></div><br>
+        여<input type="radio" name="성별" value="여">
+        <br><br>
+        <div>
+            <p>1. 당신의 월 소득은 얼마입니까?<br>
+                <label for="소득1">100만원 미만
+                <input type="radio" id="소득1" name="소득" value="100만원 미만"></label>
+                <br>
+                <label for="소득2">100만원 이상 200만원 미만
+                <input type="radio"  id="소득2" name="소득" value="100만원 이상 200만원 미만"></label>
+                <br>
+                <label for="소득3">200만원 이상 300만원 미만
+                <input type="radio"  id="소득3" name="소득" value="200만원 이상 300만원 미만"></label>
+                <br>
+                <label for="소득4">300만원 이상 400만원 미만
+                <input type="radio"  id="소득4" name="소득" value="300만원 이상 400만원 미만"></label>
+                <br>
+                <label for="소득5">400만원 이상 
+                <input type="radio"  id="소득5" name="소득" value="400만원 이상"></label>
+
+            </p>            
+        </div>
+        <br>
+        <p>추가 건의사항을 자유롭게 적어주세요</p>        
+        <textarea cols="30" rows="10"></textarea>
+        <hr>
+        <button onclick="submit">제출</button>
+
 
     </form>
+    <h1 style="display: none;">설문을 완료했습니다!</h1>
 </body>
 </html>
