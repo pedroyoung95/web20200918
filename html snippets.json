@@ -27,6 +27,8 @@
 			"\t</style>",
 			"</head>",
 			"<body>",
+			"\t<script>",        
+			"\t</script>",
 			"</body>",
 			"</html>"
 		]
