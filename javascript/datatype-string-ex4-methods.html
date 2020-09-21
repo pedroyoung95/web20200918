@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var txt = "hello world";
+        console.log(txt.length);
+
+        var c = txt.charAt(4); 
+        // 도트 연산자를 통해 연결해서  method 사용
+        // method는 method 명 다음에 소괄호() 붙임
+        // charAt(n): 문자열 0부터 시작해서 n번째에 있는 문자
+        console.log(c);
+
+        var d = txt.substr(6, 3);
+        //substr(n, m): 문자열 n부터 시작해서 총 m개까지의 문자
+        console.log(d);
+
+        console.log(txt.charAt(0));
+        console.log(txt.substr(0, 6)); //method를 바로 출력
+    </script>
+</body>
+</html>
