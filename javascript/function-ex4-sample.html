@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <input id="input1" type="text"> <br>
+    <input id="input2" type="text"> <br>
+    <button onclick="multiply()"><i class="fas fa-times"></i></button>
+    <p id="result1"></p>
+
+    <input type="text" id="input3"> <br>
+    <input type="text" id="input4"> <br>
+    <button onclick="divide()"><i class="fas fa-divide"></i></button>
+    <p id="result2"></p>
+
+    <input type="text" id="input5"> <br>
+    <input type="text" id="input6"> <br>
+    <button onclick="subtract()"><i class="fas fa-minus"></i></button>
+    <p id="result3"></p>
+
+    <input type="text" id="first"> <br>
+    <input type="text" id="second"> <br>
+    <button onclick="add()"><i class="fas fa-plus"></i></button>
+    <p id="result4"></p>
+
+    <input type="text" id="input7"> <br>
+    <input type="text" id="input8"> <br>
+    <button onclick="remainder()"><i class="fas fa-divide"></i></button>
+    <p id="result5"></p>
+
+    <script>
+        function multiply() {            
+        
+            var num1 = document.getElementById('input1').value;
+            var num2 = document.getElementById('input2').value;
+
+            var result = num1 * num2;
+            document.getElementById('result1').innerHTML = result;
+        }
+
+        function divide() {
+
+            var num3 = document.getElementById('input3').value;
+            var num4 = document.getElementById('input4').value;
+            
+            var result = num3 / num4;
+            document.getElementById('result2').innerHTML = result;
+            
+        }
+
+        function subtract() {
+
+            var num5 = document.getElementById('input5').value;
+            var num6 = document.getElementById('input6').value;
+
+            var result = num5 - num6;
+            document.getElementById('result3').innerHTML = result;
+            
+        }
+
+        function add() {
+
+            var num7 = document.getElementById('first').value;
+            var num8 = document.getElementById('second').value;
+            //javascript는 input에 입력된 것을 string으로 인식           
+
+            var result = Number(num7) + Number(num8);       
+             // function 안에 Number란 함수가 들어갈 수 있음     
+            document.getElementById('result4').innerHTML = result;
+            
+        }
+
+        function remainder() {
+
+            var num9 = document.getElementById('input7').value;
+            var num10 = document.getElementById('input8').value;
+
+            var result = num9 % num10
+            document.getElementById('result5').innerHTML = result;
+            
+        }
+    </script>
+</body>
+</html>

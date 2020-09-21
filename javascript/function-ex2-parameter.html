@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        function myfunc1(myParam) { 
+            // parameter: 함수가 사용하는 변수. (값을 받을 수 있음)
+            // 수학의 함수'f(x)'에서 x에 값을 넣는 것과 동일   
+            //위 함수는 parameter가 정의된 함수         
+            console.log("myfunc1 실행");
+            console.log(myParam);
+            
+        }
+        function myfunc2() {
+            console.log("myfunc2 실행");
+            
+        }
+        myfunc2();
+        myfunc1(3);
+        myfunc1(5); // myParam에 5를 대입
+         
+        function add(a, b) {
+            // parameter는 comma로 구분해서 얼마든지 넣을 수 있음
+            console.log("더하기");
+            console.log(a + b);
+                        
+        }
+
+        add(9, 3);
+        add(23, 51);
+    </script>
+</body>
+</html>
