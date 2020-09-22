@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="plus1"> <br>
+    <input type="text" id="plus2"> <br>
+    <button onclick="playPlus()"><i class="fas fa-plus"></i></button>
+    <p id="plus"></p>
+
+    <input type="text" id="plus3"> <br>
+    <input type="text" id="plus4"> <br>
+    <button onclick="playRemainder()"><i class="fas fa-divide"></i></button>
+    <p id="remainder"></p>
+
+    <script>
+        console.log("6");
+        function name() {
+            console.log("Firstname");
+            console.log("Lastname");                        
+        }
+        name();
+        console.log("7");
+
+        function test(a, b) {
+            console.log(a * b);
+        }
+
+        test(3, 5);
+
+        function playPlus() {
+            var n1 = document.getElementById("plus1").value;
+            var n2 = document.getElementById('plus2').value;
+
+            var result = Number(n1) + Number(n2);   
+            document.getElementById('plus').innerHTML = result;         
+        }
+
+        function tripple(number) {
+            var a = number * 3;
+            return a;
+            
+        }
+        var number2 = tripple(4);
+        console.log(number2);
+
+        function remainder(a, b) {
+            return a % b;
+        }
+
+        function playRemainder() {
+            var n1 = document.getElementById("plus3").value;
+            var n2 = document.getElementById('plus4').value;
+
+            var result = remainder(n1, n2);
+            document.getElementById('remainder').innerHTML = result;
+        }
+
+    </script>
+</body>
+</html>
