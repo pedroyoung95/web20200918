@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <p id="bayer"></p>
+    <script>
+        var bayer = {
+            color: "red", 
+            city: "Muchen, Bayern",
+            country: "Germany",
+            achivement: "treble",
+            description: function() {
+                document.getElementById("bayer").innerHTML = (this.city + "/" + bayer.country);
+                console.log("description method: 설명하는 기능");
+            }
+        }
+
+        console.log(bayer.color);
+        console.log(bayer.city);
+        console.log(bayer.country);
+        console.log(bayer.achivement);
+        bayer.description();
+        bayer.country = "Korea";  
+        bayer.description();
+    </script>
+</body>
+</html>

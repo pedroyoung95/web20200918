@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+        #favorite {width: 300px; height: 300px;}
+
+        #like {width: 300px; height: 300px;}
+    </style>
+</head>
+<body>
+    <img 
+        id="favorite" 
+        src="uniform.gif" alt="" 
+        onmouseover="bayern()"
+        onmouseout="none()">
+    
+    <br>
+
+    <img id="like" src="uniform.gif" alt=""> 
+    <br>
+    <button onclick="none2()">none</button>
+    <button onclick="uni()" id="like1">Chelsea</button>
+
+    <script>
+        function bayern() {
+            document.getElementById("favorite").src = "bayern.gif";
+        }
+        function none() {
+            document.getElementById("favorite").src = "uniform.gif";                
+        }
+
+        function none2() {
+            document.getElementById("like").src = "uniform.gif";                
+        }
+        function uni() {            
+            document.getElementById("like").src = "chelsea.jpg";            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var car = {
+            name: "kia",
+            color: "black",
+            description: function () {
+                console.log(car.name + "," + this.color); 
+                //특정 변수의 property를 지칭할 때는 '변수 이름.property'
+                //변수 내부에서 property를 지칭할 때는 'this'키워드를 변수이름 대신 사용      
+            }
+        }
+        car.description();
+        car.color = "white"; 
+        //변수가 정의된 후에 밖에서 property를 지칭했으므로 문제없음
+        car.description();
+
+    </script>
+</body>
+</html>

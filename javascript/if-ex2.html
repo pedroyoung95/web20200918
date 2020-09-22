@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1">
+    <button onclick="vote()">투표가능?</button>
+    <p id="result"></p>
+    <script>
+        function vote() {
+            var age = document.getElementById("input1").value;
+            age = Number(age);
+
+            document.getElementById("result").innerHTML ="";
+            //아래 조건문이 true여서 실행되면 "투표 가능" 출력
+            //아래 조건문이 false여서 실행되지 않으면 위 빈칸이 출력
+            if (age > 18) {
+                document.getElementById("result").innerHTML = "투표 가능";
+            }                   
+        }
+    </script>
+</body>
+</html>

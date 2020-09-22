@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var r = Math.random(); //0 <= r < 1
+        console.log(r);
+
+        r = r * 45; // 0 <= r < 45
+        console.log(r);
+
+        r = Math.floor(r);
+        console.log(r);
+
+        r = r + 1; // 1<= r <46
+        console.log(r); 
+
+        var r2 = Math.random();
+        r2 = Math.floor(r2 * 45) + 1; 
+        //0 <= r2 < 1
+        //0 <= r2*45 <45
+        //1 <= Math.floor(r2 * 45) + 1 <46 (단, 'r2 * 45 + 1'은 정수)
+        console.log(r2);
+
+    </script>
+</body>
+</html>
