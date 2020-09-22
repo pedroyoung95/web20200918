@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var carName = "kia";
+        var carWeight = 100;
+        var carColor = "black";
+        //값이 하나의 변수를 지칭하므로, 객체로 묶을 수 있음
+
+        var car = {name: "kia", weight: 100, color: "black"};
+        //'property 이름:값'을 나열하고, {}중괄호로 묶어서 변수에 대입
+        var myCar = {
+            name: "volvo", 
+            weight: 99, 
+            color: "white"
+        };
+
+        console.log(carName);
+        console.log(car.name);//'객체 이름.property 이름' 도트(.)로 연결
+
+        car.name = "hyundai";//'객체 이름.property 이름 = 새로운 값'으로 값 변경
+        console.log(car.name);
+        console.log(myCar.name);
+
+
+    </script>
+</body>
+</html>
