@@ -12,9 +12,9 @@
             name: "kia",
             color: "black",
             description: function () {
-                console.log(this.name + "," + this.color); 
-                //function이 변수 안에 들어가있는 상태이므로
-                //변수 안에서 property를 지칭하려면 'this.'키워드 사용      
+                console.log(car.name + "," + this.color); 
+                //특정 변수의 property를 지칭할 때는 '변수 이름.property'
+                //변수 내부에서 property를 지칭할 때는 'this'키워드를 변수이름 대신 사용      
             }
         }
         car.description();
