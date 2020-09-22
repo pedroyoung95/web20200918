@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    정사각형 한 변의 길이: <input type="text" id="one"><br>
+    <br>
+    <button id="size1" onclick="size()">넓이</button>   
+    <button id="length2" onclick="length()">총 둘레</button>
+    <br>
+    <p id="result"></p>
+
+    <hr>
+
+    서울 시청과의 거리 비교 <br>
+    A지점: <input type="text" id="start"> <br>
+    B지점: <input type="text" id="destination">
+    <button onclick="measure()">측정</button>
+    <p id="result2"></p>
+    
+    <script>
+        function size() {
+            var s = document.getElementById("one").value;
+            s = (Number(s)) ** 2;
+
+            document.getElementById("result").innerHTML = s;
+        }
+
+        function length() {
+            var l = document.getElementById("one").value;
+            l = (Number(l)) * 4;
+
+            document.getElementById("result").innerHTML = l;
+        }
+
+        function measure() {
+            var s = Number(document.getElementById("start").value);
+            var d = Number(document.getElementById("destination").value);
+            
+            var result = Math.abs(s - d);
+
+            document.getElementById("result2").innerHTML = result;            
+        }
+    </script>
+</body>
+</html>
