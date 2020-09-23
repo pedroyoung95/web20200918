@@ -7,7 +7,44 @@
     </style>
 </head>
 <body>
+    <input type="number" id="input1">
+    <button onclick="show()">구구단!</button>
+    <div id="result">
+
+
+    </div>
     <script>
+                
+        // for (var i = 1; i <= 9; i++) {
+        //     txt += "2 &times;" + i + "=" + (2*i) +"<br>";
+        //     // 산술 연산자는 할당 연산자보다 먼저 이뤄짐
+        //     // &times; -> x자 기호
+        //     // += 대입 연산자를 쓰는 이유
+        //     // 맨 처음 txt 값은 빈 string
+        //     // i = 1부터 들어감
+        //     // i = 9 까지 들어간 결과가 한 번에 txt에 들어감
+        // }
+
+        function show() {
+            var txt = ""; 
+            //txt를 string으로 만듦
+            //함수 밖에 있을 경우, 이전 함수의 결과가 화면에 계속 남음
+            //새로운 구구단으로 바꿔서 나타나게 할 경우, 함수가 실행될 때마다
+            //txt를 string으로 재정의 하도록 함수 안으로 넣기
+
+            for (var i = 1; i <=9; i++) {     
+                
+                var num = Number(document.getElementById("input1").value);           
+                txt +=  num + "&times;" + i + "=" + (num * i) + "<br>";
+                //num은 하나의 변수이므로, 하나의 string으로 보고 결합
+                //"num &times;"->num이라는 변수가 아니라 새로운 글자로 인식해버림
+            }
+
+            document.getElementById("result").innerHTML = txt;
+        }
+       
+
+        // document.getElementById("result").innerHTML = txt;
     </script>
 </body>
 </html>
