@@ -7,9 +7,9 @@
     </style>
 </head>
 <body>
-    <button onclick="rpsGame()" ><i class="fas fa-hand-rock"></i></button>
-    <button onclick="rpsGame()" ><i class="fas fa-hand-paper"></i></button>
-    <button onclick="rpsGame()" ><i class="fas fa-hand-scissors"></i></button>
+    <button onclick="rpsGame(3)" ><i class="fas fa-hand-rock"></i></button>
+    <button onclick="rpsGame(2)" ><i class="fas fa-hand-paper"></i></button>
+    <button onclick="rpsGame(1)" ><i class="fas fa-hand-scissors"></i></button>
    
     <br>
 
@@ -18,18 +18,22 @@
     <p id="result"></p>
 
     <script>
-        function rpsGame() {
+        function rpsGame(user) {
             var r = Math.floor(Math.random() * 3) + 1;
             var fileName = "rps" + r + ".png";
 
-            document.getElementById("computer").src = fileName;
+            document.getElementById("computer").src = fileName;            
 
-            if () {
-                document.getElementById("result").innerHTML = "이겼습니다.";
-            } else if () {
+            if (r == user) {
                 document.getElementById("result").innerHTML = "비겼습니다.";
-            } else {
+            } else if (r == 1 && user == 2) {
                 document.getElementById("result").innerHTML = "졌습니다.";
+            } else if (r == 2 && user == 3) {
+                document.getElementById("result").innerHTML = "졌습니다.";
+            } else if (r == 3 && user == 1) {
+                document.getElementById("result").innerHTML = "졌습니다.";
+            }  else {
+                document.getElementById("result").innerHTML = "이겼습니다.";
             } 
                 
             
