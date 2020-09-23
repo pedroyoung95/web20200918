@@ -9,13 +9,35 @@
 <body>
     20단:<input type="number" id="input1">
     <button onclick="show()">확인</button>
+    <div id="result">
+    </div>
+    <br>
+    <div id="div1">
+    </div>
+   
+    
     <script>
+        
         function show() {
             var num = Number(document.getElementById("input1").value);
-            var txt;
-            
-            
+            var txt = "";
+            for (var i = 1; i <= 9; i++) {
+                txt += num + "&times" + i + " = " + (num * i) + "<br>";
+            }            
+
+            document.getElementById("result").innerHTML = txt;          
         }
+
+        var txt1 = "";
+        for (var i = 2; i <= 9; i++) {
+            for(var j = 1; j <=9; j++) {
+                txt1 += i + "&times" + j + "=" + (i * j) +"<br>";
+            }
+
+        }
+        document.getElementById("div1").innerHTML = txt1;
+
+       
     </script>
 </body>
 </html>
