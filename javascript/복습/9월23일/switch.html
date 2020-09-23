@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    학점 입력:<input type="text" id="grade" placeholder="A,B,C,D,F로 입력">
+    <br>
+    <button onclick="change()">확인</button>   
+    <p id="result"></p> 
+    <script>
+        function change() {
+            var grade = document.getElementById("grade").value;
+
+            switch (grade) {
+                case 'A+':
+                case 'a+':
+                    document.getElementById("result").innerHTML = "4.5점";
+                    break;
+                case 'A':
+                case 'a':
+                    document.getElementById("result").innerHTML = "4.0점";
+                    break;
+                case 'B+':
+                case 'b+':
+                    document.getElementById("result").innerHTML = "3.5점"
+                    break;
+                case 'B':
+                case 'b':
+                    document.getElementById("result").innerHTML = "3.0점";
+                    break;
+                case 'C+':
+                case 'c+':
+                    document.getElementById("result").innerHTML = "2.5점";
+                    break;
+                case 'C':
+                case 'c':
+                    document.getElementById("result").innerHTML = "2.0점";
+                    break;
+                case 'D':
+                case 'd':
+                    document.getElementById("result").innerHTML = "1.5점";
+                    break;
+                case 'F':
+                case 'f':
+                    document.getElementById("result").innerHTML = "1.0점";
+                    break;
+                default:
+                    document.getElementById("result").innerHTML = "잘못된 학점입니다.";
+                    break;
+            }
+            
+        }
+    </script>
+</body>
+</html>

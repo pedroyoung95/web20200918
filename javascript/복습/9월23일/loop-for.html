@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <p>반복할 땐 이렇게</p>
+    <button onclick="loop()">눌러보세요!</button>
+    <div id="result"></div>
+    <script>
+        var txt = "" ;
+        function loop() {
+            for (i = 1; i <= 5; i++) {
+                var s = "복붙하지 말고";
+                txt += "<div>" + s + "</div>";
+            }
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
