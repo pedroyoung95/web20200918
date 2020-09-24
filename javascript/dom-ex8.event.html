@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello')"; id="head1">Lorem.</h1>
+    <h1 onclick="show()"; id="head2">Lorem, ipsum.</h1>
+    <h1 id="head3">Lorem, ipsum dolor.</h1>
+    <h1 id="head4">Lorem, ipsum.</h1>
+
+    <script>
+        var h4 = document.getElementById("head4");
+        h4.addEventListener("click", show);
+        //addEventListener("x", y)
+        //event method로, 추가하고자 하는 event 이름을 x에
+        //(event property을 쓸 경우, 'on'을 빼고 쓰기)
+        //실행하고자 하는 event는 y 자리에 추가
+        //y에 함수를 넣을 시, 소괄호 빼고 함수 명만 기입
+
+        var h3 = document.getElementById("head3");
+
+        h3.onclick = show;
+        //event property에 동작을 넣기 위해 함수를 값으로 넣울 때,
+        //javaschript에서는 show라는 함수가 
+        //onclick이라는 property의 '값'으로 보기 때문에,
+        //함수 이름만 넣어야 함.
+        //함수는 어디에 있어도 실행할 때 맨 위로 가서 우선적으로 인식됨
+        
+
+        function show() {
+            for (var i = 0; i < 3; i++) {
+                console.log(i);
+            }
+        }
+
+        console.log(show);
+
+
+
+    </script>
+</body>
+</html>
