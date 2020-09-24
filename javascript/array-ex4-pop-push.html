@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <script>
+        var heros = ["thor", "hulk" , "cap", "doctor"];
+
+        for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+        }
+
+        // push(): array 객채에 소괄호 안에 있는 값을 추가
+        heros.push("marvel");
+        console.log(heros.length);
+
+        // pop(): array 객체에서 값을 꺼냄. parameter 필요없음. 마지막 값을 꺼냄.
+        heros.pop();
+        heros.pop();
+        console.log(heros.length)
+        for (var i = 0; i < heros.length; i++) {
+            console.log(heros[i]);
+        }
+    </script>
+</body>
+</html>
