@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="head1">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head2">Consequatur autem itaque nulla sequi.</h1>
+    <h1 id="head3">Ab nisi temporibus odit earum.</h1>
+    <h1 id="head4">Saepe, explicabo? Dolorem, totam adipisci.</h1>
+    <h1 id="head5">Excepturi dignissimos fugit qui sit.</h1>
+    <script>
+        var head1 = document.getElementById("head1");
+        var heads = document.getElementsByTagName("h1");
+        console.log(heads.length);
+        //heads는 모든 h1태그를 item으로 갖는 array로 볼 수 있음
+        
+        for (var i = 0; i <heads.length; i++) {
+            console.log(heads[i].innerHTML);
+        }
+    </script>
+</body>
+</html>
