@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <button onclick="lotto()">로또 번호</button>
+    <div id="result"></div>
+    <script>
+        function lotto() {
+            var numbers = [];
+
+            while (numbers.length < 6) 
+            //밑에 실행문은 numbers에 6개가 채워질때까지 반복
+            //6개가 되면 while은 종료, 그 밑에 실행문으로 넘어감 
+                {
+                var newNumber = Math.floor(Math.random()*45)+1;
+                if (!numbers.includes(newNumber)) {
+                numbers.push(newNumber);
+                }
+            }
+// 1~6번으로 뽑혔다면,
+// <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div>
+            var txt = "";
+            for (var i = 0; i < numbers.length; i++) 
+            //while에서 numbers.length가 6인 채로 끝났으므로
+            //i < numbers.length는 i < 6와 동일
+                {
+                txt += "<div>" + numbers[i] + "</div>";
+            }
+            document.getElementById("result").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
