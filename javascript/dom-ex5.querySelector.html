@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 class="note" id="head2">Eveniet?</h1>
+    <h1 class="note error" id="head3">Quas!</h1>
+    <h1 class="note error" id="head4">Rerum?</h1>
+    <h1 id="head5">Ullam!</h1>
+    <script>
+        var h1 = document.querySelector("#head1");
+        //querySelector는 하나의 element만 가져오기 때문에 배열X
+        console.log(h1.innerHTML);
+
+        var h2 = document.querySelector(".note");
+        //같은 클래스가 여러 개인 경우, querySelector는 맨 위 한 개만 가져옴
+        console.log(h2.innerHTML);
+
+    </script>
+</body>
+</html>
