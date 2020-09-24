@@ -93,14 +93,19 @@
             }
             console.log(txt1);
         }
+        // 문제7: 5*5 형태이므로 i랑 j 각자 5번 반복
+       
         console.log("----문제8----");
         for (var i = 0; i <= 4; i++) {
             var txt1 ="";
             for (var j = i; j <= (i+4); j++) {
+                //'j = 0; j <= (0+4);'에 0대신 j를 대입한 식
                 txt1 += j;
             }
             console.log(txt1);
         }
+
+         // 문제9: n번 줄에 n개 형태이므로, i가 1번 반복할 때 j도 1번 반복
         console.log("----문제9----");
         for (var i = 1; i <= 5; i++) {
             var txt = "";
@@ -114,11 +119,21 @@
         //9까지는 나머지가 0~9, 10부터 다시 0으로 시작
         var k = 0; //k는 찍히는 숫자를 담당
         for (var i = 1; i <= 5; i++) {
+            // i는 줄의 반복을 담당
             var txt = "";
-            for (var j = 0; j < i; j++) {
-            // j의 역할은 한 줄의 찍히는 숫자의 개수만 담당
-                txt += (k % 10);
+            for (var j = 1; j <= i; j++) {
+            // j는 한 줄의 찍히는 숫자의 개수 담당
+                txt += (k % 10); // 'txt +=' 이 부분이 찍히는 문자를 결정
                 k++;
+            }
+            console.log(txt);
+        }
+
+        console.log("--------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = i; j < (i+5); j++) {
+                txt += (2*j);
             }
             console.log(txt);
         }
