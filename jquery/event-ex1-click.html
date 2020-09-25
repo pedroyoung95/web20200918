@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 onclick="console.log('hello');" id="head1">Lorem.</h1>
+    <h1 id="head2">Lorem.</h1>
+    <h1 id="head3">Lorem.</h1>
+    <h1 id="head4">Lorem.</h1>
+    <script>
+        function myFunc () {
+            console.log('my function');
+        }
+
+        var afunc = function() {
+            console.log("이름없는 함수");
+        } //함수는 이름없이도 정의 가능
+
+        $("#head4").click(function () {
+            console.log("이름없는 함수 2222");
+        }); //이름없는 함수를 통째로 넣어서 실행시킬 수 있음
+        $("#head3").click(afunc);
+        $("#head2").click(myFunc);
+        $("#head1").click();
+        //h1을 직접 누르지 않아도 click이라는 event method으로 인해 
+        //클릭이 실행되어서 hello가 1개가 이미 출력됨
+        
+    </script>
+</body>
+</html>
