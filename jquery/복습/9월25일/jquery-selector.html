@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function () {
+                console.log("button");                
+            });
+            $(".class1.special").mouseover(function () {
+                console.log("h1");                
+            });
+            $("#para1").click(function () {
+                console.log("para1");                
+            });
+            
+
+        });
+    </script>
+</head>
+<body>
+    <button>button!</button>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 class="class1" id="head2">Vero, reiciendis animi!</h1>
+    <h1 class="class1 special" id="head3">Sequi, alias id!</h1>
+    <p id="para1">Lorem, ipsum dolor.</p>
+    <p id="para2">Reprehenderit, et iure?</p>
+    <p id="para3">Vitae, neque laboriosam!</p>
+</body>
+</html>
