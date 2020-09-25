@@ -8,6 +8,29 @@
 </head>
 <body>
     <script>
+        var bayern = [
+            "Lewandovski", "Muller", "Goretska", "Neuor", "Gnabry"
+            ]
+        console.log(bayern.length);
+        console.log(bayern[2]);
+        bayern.push("Kimmich");
+        console.log(bayern.length);
+
+        for (var i = 0; i < 6; i++) {
+            console.log(bayern[i]);
+        }
+        bayern.pop();
+        console.log(bayern.length);
+        for (var i = 0; i < 5; i++) {
+            console.log(bayern[i]);
+        }
+        bayern.splice(2, 1, "boateng", "pavard");
+        console.log(bayern.length);
+        for (var i = 0; i < 6; i++) {
+            console.log(bayern[i]);
+        }
+
+
     </script>
 </body>
 </html>
