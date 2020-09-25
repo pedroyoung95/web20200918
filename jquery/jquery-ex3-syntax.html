@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src='https://kit.fontawesome.com/a076d05399.js'>
+    </script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'>
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <h1 id="head1">Lorem.</h1>
+    <script>
+        var txt = $("#head1").text();
+        //$("#head1"):css selector 형식으로 element를 select 
+        //.text(): 가져온 대상을 jquery 객체로 보고 method를 실행 
+        //S("알맞은 selector").method(); ->이런 형태로 작성
+        console.log(txt);     
+
+        var t2 = document.getElementById("head1").innerHTML;
+        console.log(t2);
+
+        $(".myclass");
+        $("p");
+        $("p.note.error");
+    </script>
+</body>
+</html>
