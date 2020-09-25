@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#head1").click(function () {
+                console.log("head1");                
+            })
+            $("#head2").on("click", function () {
+                console.log("head2");                
+            });
+            $("#head3").on({
+                click: function () {
+                    console.log("head3");                    
+                },
+                mouseover: function () {
+                    console.log("head3");                    
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Recusandae, accusamus qui.</h1>
+    <h1 id="head3">Impedit, aut consequuntur?</h1>
+</body>
+</html>

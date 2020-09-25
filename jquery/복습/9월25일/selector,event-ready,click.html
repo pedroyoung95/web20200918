@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function () {
+                console.log("button");                
+            });
+            $("h1.class1.special").mouseover(function () {
+                console.log("h1");                
+            });
+            $("#para1").click(function () {
+                console.log("para1");                
+            });
+            $("[style]").click(function () {
+                console.log("para2");                
+            });
+            $("tr:nth-child(2n)").click(function () {
+                console.log("table");                
+            });            
+            //jquery selector 작성 시, ("") 이 안에 넣기
+            //("elements"), (".className"), ("#idName")
+            //("tr:nth-child(n)")
+        });
+    </script>
+</head>
+<body>
+    <button>button!</button>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 class="class1" id="head2">Vero, reiciendis animi!</h1>
+    <h1 class="class1 special" id="head3">Sequi, alias id!</h1>
+    <p id="para1">Lorem, ipsum dolor.</p>
+    <p id="para2" style="color: red;">Reprehenderit, et iure?</p>
+    <p id="para3">Vitae, neque laboriosam!</p>
+    <table>
+        <tr>
+            <td>Lorem.</td>
+            <td>Quam?</td>
+            <td>Molestias?</td>
+        </tr>
+        <tr>
+            <td>Non.</td>
+            <td>Laborum.</td>
+            <td>Quaerat!</td>
+        </tr>
+        <tr>
+            <td>Voluptatibus.</td>
+            <td>Suscipit?</td>
+            <td>In!</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
