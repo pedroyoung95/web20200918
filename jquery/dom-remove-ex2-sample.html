@@ -7,9 +7,28 @@
     </style>
     <script>
         $(document).ready(function() {
+            $("#btn1").click(function () {
+               var txt = $("#input1").val();
+               var listItem = $("<li />");
+               listItem.text(txt);
+               listItem.click(function () {
+                   $(this).remove();                   
+               })
+               $("#result").append(listItem);
+            });
+
+            $("#btn2").click(function () {
+                $("#result").empty();
+            });   
+
+            
         });
     </script>
 </head>
 <body>
+    <input type="text" id="input1">
+    <button id="btn1"><i class="fas fa-plus"></i></button>
+    <button id="btn2"><i class="fas fa-trash"></i></button>
+    <ul id="result"></ul>
 </body>
 </html>
