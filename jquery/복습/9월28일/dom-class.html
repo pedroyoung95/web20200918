@@ -4,12 +4,37 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
+        .note {
+            font-size: 20px;
+            color: blue;
+        }
+        .error{
+            background-color: yellow;
+        }
+        .by {
+            text-decoration: underline;
+        }
     </style>
     <script>
         $(document).ready(function() {
+            $("#head1").addClass("note");
+            $("#head2").addClass("error");
+            $("#head3").addClass("note error");
+            $("h1").addClass("by");
+            $("#head3").removeClass("error");
+            $("#head4").removeClass();
+            $("#btn1").click(function () {
+               $("#head5").toggleClass("error");                 
+            });            
         });
     </script>
 </head>
 <body>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Doloribus, officia placeat?</h1>
+    <h1 id="head3">Consequatur, alias consequuntur?</h1>
+    <h1 id="head4">Molestias, quidem maxime.</h1>
+    <h1 id="head5">Quisquam, laboriosam reprehenderit.</h1>
+    <button id="btn1">click</button>
 </body>
 </html>

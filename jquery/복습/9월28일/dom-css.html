@@ -7,9 +7,24 @@
     </style>
     <script>
         $(document).ready(function() {
+            $("#btn1").click(function () {
+                $("#head1").css("background-color", "yellow");
+            });
+            $("#btn2").click(function () {
+                $("#head2").css({
+                    color: "red",
+                    fontSize: "50px",
+                    backgroundColor: "blue"
+                });                
+            });
         });
     </script>
 </head>
 <body>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <button id="btn1">change</button>
+    <br>
+    <h1 id="head2">Lorem, ipsum dolor.</h1>
+    <button id="btn2">click</button>
 </body>
 </html>
