@@ -8,18 +8,18 @@
     <script>
         $(document).ready(function() {
             // $("#link1").attr("href", "https://www.google.com")
-            //attr("parameter1", "paramter2")
-            //첫 번째 parameter -> set하려는 attribute
-            //두 번째 parameter -> set하려는 값
+            
             $("#input1").keyup(function () {               
                 $("#link1").attr("href", $(this).val());                
             });
+            //attr("attributeName", "value")
+            //첫 번째 parameter -> set하려는 attribute이름
+            //두 번째 parameter -> set하려는 값
+
             $("#input2").keyup(function () {
                 $("#link2").attr("href", $("#input2").val())
             });
-            //처음부터 상위항목을 작성X
-            //가장 하위, 최종 작동을 먼저 작성
-            //그 바로 윗단계 작동을 쌓아 올리기            
+                       
         });
     </script>
 </head>

@@ -7,9 +7,28 @@
     </style>
     <script>
         $(document).ready(function() {
+            var test1 = $("#head1").text();
+            console.log(test1);
+            var test2 = $("#head2").html();
+            console.log((test2));
+            
+            $("#input1").keyup(function () {
+                var test3 = $("#input1").val();
+                console.log(test3);
+            });    
+            var test4 = $("a").attr("href");
+            console.log(test4);
         });
     </script>
 </head>
 <body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2">Lorem, <span>ipsum</span> dolor.</h1>
+    <input type="text" id="input1">
+    <br>
+    <br>
+    <input type="text" id="input3">
+    <br>
+    <a href="https://www.google.com">link</a>
 </body>
 </html>

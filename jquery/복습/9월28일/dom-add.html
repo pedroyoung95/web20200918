@@ -7,9 +7,27 @@
     </style>
     <script>
         $(document).ready(function() {
+            $("#head1").append("world");
+            $("#head2").prepend("hello");
+            $("#head3").before("hello");
+            $("#head3").after("world");
+
+            $("#div1").append("<p/>hello!");
+
+            var test1 = $("<p/>");
+            test1.text("bayern");
+            $("#div2").append(test1);
         });
     </script>
 </head>
 <body>
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Eos, odio deserunt?</h1>
+    <h1 id="head3">Nulla, reiciendis tempore.</h1>
+    <hr>
+    <div id="div1">Lorem, ipsum.</div>
+    <div id="div2">Esse, ea.</div>
+    <div id="div3">In, ducimus!</div>
+    <div id="div4">Dolores, id.</div>
 </body>
 </html>
