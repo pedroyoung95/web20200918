@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            var t = $("#head1").text();
+            //text() -> element 안에 있는 text 정보만 가져옴
+            //()안에 빈칸이면 정보를 get, 가져옴
+            var h = $("#head2").html();
+            //html() -> element 안에 있는 모든 내용(html 정보)을 가져옴
+
+            console.log(t);
+            console.log(h);
+
+            var v = $("#input1").val();
+            //val() -> element 안에 있는 value(값)을 가져옴
+            console.log(v);
+
+            $("#input1").keyup(function () {
+                var val = $(this).val();
+                console.log(val);                
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="head1">Lorem, <span>ipsum</span> dolor.</h1>
+    <h1 id="head2">Commodi, <span>veniam</span> nulla.</h1>
+    <h1 id="head3">Blanditiis, illum quos.</h1>
+
+    <input type="text" id="input1" value="korea">
+
+</body>
+</html>  

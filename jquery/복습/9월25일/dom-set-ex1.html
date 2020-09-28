@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#input1").keyup(function () { 
+                var v = $("#input1").val();
+
+                    $("#div1").text(v);
+                    //변수 v의 값을 text로 set, 넣어줌
+                    $("#div2").html(v);
+                    //변수 v의 값을 html로 넣어줌
+                    $("#input2").val(v);
+                    //변수 v의 값을 선택된 것에 값으로 넣어줌
+                    //소괄호 안에 특정 변수나 값을 넣으면,
+                    //괄호 안 변수나 값으로 내용이 set 됨.
+            });
+        });        
+    </script>
+</head>
+<body>
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>
