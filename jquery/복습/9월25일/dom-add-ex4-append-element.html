@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#div1").append("<p>hello</p>");
+            //()안에 element도 넣을 수 있음
+            $("#div2").append("<p></p>");
+            $("#div3").append("<p />");
+
+            var newPara = $("<p />");
+            //$()안에 tag를 입력하면 dom tree에 새로운 element 생성
+            newPara.text("hello");
+            //$("<p />")는 새로운 객체이므로, method 사용 가능
+            //객체를 add 하면 method를 통해 변경 가능
+            $("#div4").append(newPara);
+            //append() 안에 변수, 객체도 넣을 수 있음
+            //단, 변수나 객체는 ""없이 기입
+
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem, ipsum dolor.</div>
+    <div id="div2">Lorem, ipsum dolor.</div>
+    <div id="div3">Lorem, ipsum dolor.</div>
+    <div id="div4">Lorem, ipsum dolor.</div>
+</body>
+</html>
