@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        div {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            var bc = $("#div1").css("background-color");            
+            console.log(bc);
+
+            $("#div1").css("color", "blue");
+            //css("property name", "value")
+            //선택된 element의 css 스타일을 변경
+            $("#div1").css({
+                fontSize: "20px",
+                fontWeight: "bold",
+                textDecoration: "underline"
+            });
+            //여러 style 적용 시, css 객체로 기입
+            //객체로 사용 시, property name은 lowCamelCase로 작성
+            //""로 감싸면 lowCamelCase로 작성 안 해도 됨
+            
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi cum magni aperiam, sapiente fugiat iure quasi. Reprehenderit excepturi nihil unde architecto rerum! Ducimus ullam harum voluptatem eos voluptatibus odit culpa?</div>
+</body>
+</html>
