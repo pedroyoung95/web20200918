@@ -8,7 +8,8 @@
     <script>
         $(document).ready(function() {
             $("p").parent().css("border", "5px solid green");
-            //모든 p element의 조상을 return하고, css method 적용
+            //모든 p element의 직계부모를 return하고, css method 적용
+            //css selector에는 부모 찾는 기능이 없으므로 parent 사용
         });
     </script>
 </head>

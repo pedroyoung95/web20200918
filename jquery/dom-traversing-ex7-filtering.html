@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("div").first().css("border", "5px solid green");
+            //first(): 내용 상관없이 시작태그가 가장 먼저 나온 요소
+            $("div").last().css("border", "5px solid blue");
+            //last(): 내용 상관없이 시작태그가 가장 나중에 나온 요소
+
+            $("div").eq(0).css("padding", "5px");
+            //eq(index번호): 0번 부터의 index 번호에 해당하는 요소
+            $("div").eq(1).css("padding", "7px");
+            $("div").eq(2).css("padding", "9px");
+            $("div").eq(3).css("padding", "11px");
+        });
+    </script>
+</head>
+<body>
+    <div> 
+        <div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ut consequuntur repudiandae repellat, eos tempora eius est autem! Aut perferendis animi hic fuga itaque ipsum amet sint, labore libero vitae.</div>
+        </div>
+    </div>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe in explicabo reprehenderit ratione deleniti earum porro perspiciatis dolore sequi veritatis blanditiis consequatur consectetur possimus excepturi, recusandae magnam quae? Facere, placeat.</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("h3").siblings().css("font-size", "20px");
+            //siblings(): 자신을 제외한 모든 형제를 선택(자신 적용X)
+            $("h3").next().css("color", "blue");
+            //next(): 선택된 요소 기준 바로 오른쪽 형제요소
+            $("h3").nextAll().css("border", "5px solid green");
+            //nextAll(): 선택된 요소 기준 모든 오른쪽 형제요소
+            //prev(): 선택된 요소 기준 바로 왼쪽 형제요소
+            //prevAll(): 선택된 요소 기준 모든 왼쪽 형제요소
+        });
+    </script>
+</head>
+<body>
+    <h1>Lorem.</h1>
+    <h2>Quos!</h2>
+    <h3>Deleniti.</h3>
+    <h4>Commodi?</h4>
+    <h5>Tempore?</h5>
+    <h6>Id.</h6>
+</body>
+</html>
