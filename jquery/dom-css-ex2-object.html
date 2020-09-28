@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            var obj1 = {name: "john", age: 50};
+            console.log(obj1.name);
+            console.log(obj1.age);
+            console.log("========");
+            console.log(obj1["name"]);
+            console.log(obj1["age"]);
+            //[]안 ""로 묶어도 같은 접근
+
+            var obj2 = {"na-me": "jane", "age": 30};
+            //object 선언 시, 속성이름을 ""으로 선언 가능
+            //""로 묶으면 string으로 취급되어서 lowCamelCase 필요X
+            // console.log(obj2.name);
+            // console.log(obj2.age);
+            console.log("========");
+            console.log(obj2["na-me"]);
+            console.log(obj2["age"]);
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>
