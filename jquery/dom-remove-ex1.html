@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#div1").remove();
+            //remove() -> element 자체를 지움
+            $("#div2").empty();
+            //empty() -> element 안 content만 지움
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">Lorem ipsum dolor sit amet.</div>
+    <div id="div2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis similique aperiam odio, eligendi quis ea optio esse? Corporis velit vero recusandae aliquam, natus asperiores tenetur repudiandae repellat earum totam ad.</div>
+</body>
+</html>
