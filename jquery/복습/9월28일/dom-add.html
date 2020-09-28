@@ -17,6 +17,19 @@
             var test1 = $("<p/>");
             test1.text("bayern");
             $("#div2").append(test1);
+            $("#btn1").click(function () {
+               var txt = $("#input1").val();
+               var li = $("<li/>");
+               li.text(txt);
+               $("ul").append(li)
+               $("li").click(function () {
+                  $(this).remove(); 
+               });
+               
+            });
+            $("#btn2").click(function () {
+                $("ul").empty();
+            })
         });
     </script>
 </head>
@@ -29,5 +42,10 @@
     <div id="div2">Esse, ea.</div>
     <div id="div3">In, ducimus!</div>
     <div id="div4">Dolores, id.</div>
+    <br>
+    <input type="text" id="input1">
+    <button id="btn1" class="i fas fa-plus"></button>
+    <button id="btn2" class="i fas fa-trash"></button>
+    <ul></ul>
 </body>
 </html>
