@@ -7,9 +7,34 @@
     </style>
     <script>
         $(document).ready(function() {
+            $("#btn1").click(function () {               
+                var li = $("<li/>")
+                var btn = $("<button/>")
+                btn.append($("<i>").addClass("fas fa-minus"));
+                li.text($("#input1").val());
+                li.append(btn);
+                $("#result").append(li);
+
+                btn.click(function () {
+                   $(this).parent().remove();                     
+                });
+                
+            });
+
+            $("span").parents().css("border", "5px dotted blue");
         });
     </script>
 </head>
 <body>
+    <input type="text" id="input1">
+    <button id="btn1"><i class="fas fa-plus"></i></button>
+    <ul id="result"></ul>
+    <hr>
+    <div>
+        <h1>
+            <p><span>Lorem, ipsum dolor.</span></p>
+        </h1>
+    </div>
+
 </body>
 </html>

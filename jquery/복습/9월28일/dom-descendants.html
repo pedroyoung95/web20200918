@@ -7,9 +7,21 @@
     </style>
     <script>
         $(document).ready(function() {
+            $("#div1").children().css("border", "5px solid red");
+            $("#div1>h1").css("color", "blue");
+            $("#div2")
         });
     </script>
 </head>
 <body>
+    <div id="div1">
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Ratione, dolorum officiis.</h1>
+    </div>
+    <div id="div2">
+        <div>
+            <p><span>Lorem, ipsum dolor.</span></p>
+        </div>
+    </div>
 </body>
 </html>
