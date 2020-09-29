@@ -8,15 +8,16 @@
     <script>
         $(document).ready(function() {
             $("#div1").children().css("border", "5px solid red");
-            $("#div1>h1").css("color", "blue");
-            $("#div2")
+            $("#div1>h1.head1").css("color", "blue");
+            $("#div2").find("span").css("background-color", "yellow");
+            $("#div2 span").css("font-size", "50px");
         });
     </script>
 </head>
 <body>
     <div id="div1">
         <h1>Lorem, ipsum dolor.</h1>
-        <h1>Ratione, dolorum officiis.</h1>
+        <h1 class="head1">Ratione, dolorum officiis.</h1>
     </div>
     <div id="div2">
         <div>

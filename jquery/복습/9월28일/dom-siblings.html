@@ -7,9 +7,19 @@
     </style>
     <script>
         $(document).ready(function() {
+            $("h4").siblings().css("color", "blue")
+            $("h5").prev().css("color", "red");
+            $("h6").prevAll().css("font-size", "40px");
+            $("h3").nextUntil("h6").css("background-color", "yellow");
         });
     </script>
 </head>
 <body>
+    <h1>Lorem.</h1>
+    <h2>Magni!</h2>
+    <h3>Enim?</h3>
+    <h4>Architecto!</h4>
+    <h5>Quasi.</h5>
+    <h6>Magnam?</h6>
 </body>
 </html>
